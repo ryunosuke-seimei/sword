@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Title from '@/components/HelloWorld'
+import Top from '@/views/Top'
+import Input from '@/views/Input'
 
 Vue.use(VueRouter)
 // VueRouterインスタンスを生成する
@@ -10,7 +11,11 @@ const router = new VueRouter({
   routes: [
     {
       path:"/",
-      component: Title
+      component: Top
+    },
+    {
+      path:"/input",
+      component: Input
     }
   ],
 })

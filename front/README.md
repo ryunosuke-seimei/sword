@@ -1,6 +1,6 @@
 # Sword Front
-cmd + k　⇨ v
-でプレビューが表示される
+cmd + k　⇨ v でプレビューが表示される  
+[sample link markdown](https://codechord.com/2012/01/readme-markdown/)
 
 ## サイトの機能
 Vue.jsでのSPA
@@ -10,21 +10,29 @@ Vue.jsでのSPA
 
 ## sample
 liffとvueの連結
-https://titanicrising.jp/blog/vue-liff
-https://zenn.dev/kmiura55/articles/6524c0f7e21183
+- https://titanicrising.jp/blog/vue-liff
+- https://zenn.dev/kmiura55/articles/6524c0f7e21183
 
 npmでのline-sdk
-https://www.npmjs.com/package/@line/bot-sdk
+- https://www.npmjs.com/package/@line/bot-sdk
 
 axiosでのやりとり
-https://qiita.com/right1121/items/092ac7ff747e1c47b2b1
+- https://qiita.com/right1121/items/092ac7ff747e1c47b2b1
+
+axiosでやりとりをする際の注意点
+- https://qiita.com/right1121/items/092ac7ff747e1c47b2b1
+- https://github.com/imcvampire/vue-axios
+
+axios async await sample
+- https://secure.sakura.ad.jp/vps/
+
 
 .env file
-https://qiita.com/h-reader/items/9e2f8dbc3b9eaec4f5ee
-https://qiita.com/yoshi0518/items/f8cd408f8ef86fb02d74
+- https://qiita.com/h-reader/items/9e2f8dbc3b9eaec4f5ee
+- https://qiita.com/yoshi0518/items/f8cd408f8ef86fb02d74
 
 vuexについて⇨間違っている点が何点かある
-https://blog.codecamp.jp/vuejp-vuex-commentary
+- https://blog.codecamp.jp/vuejp-vuex-commentary
 
 ```sotre.js
 import Vue from "vue"
@@ -59,7 +67,16 @@ export default {
 ```
 
 Vuexに対する理解が深まるパート
-https://reffect.co.jp/vue/understaind-vue-basic
-
+- https://reffect.co.jp/vue/understaind-vue-basic  
 Actionからmutationsやcommit dispatchを一通り使ったサンプル
+
+
+---
+
+## tips
+1. vueでaxiosを叩くときにはvue-axiosも同時にinstallしないとprotocol errorが起きる
+[git issue](https://github.com/imcvampire/vue-axios)
+
+2. vuexはモジュールごとに分割することができる。  
+今回はやっていない
 

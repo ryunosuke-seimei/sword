@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    {{title}}
-    <button v-on:click="change">change</button>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -12,16 +10,12 @@ export default {
   name: 'App',
   computed:{
     title(){
-      return this.$store.state.title
-    }
-  },
-  methods:{
-    change(){
-      this.$store.commit("setTitle", "title")
+      return this.$store.gatters.title
     }
   },
   mounted(){
-    this.$store.dispatch("getTitle")
+    this.$store.dispatch("getTitle");
+    this.$store.dispatch("getName");
   }
 }
 </script>

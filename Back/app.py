@@ -19,21 +19,6 @@ def API_get():
 
 @app.route("/rin_jin/item-api", methods=["POST"])
 def API_insert():
-    data = json.loads(request.json["data"])
-    title = data["title"]
-    form_list = data["data"]
-    values = [title]
-    for form in form_list:
-        values.append(form["value"])
-
-    data_format = ",".join(["%s"] * 11)
-    db_connection = db.connect(host=app.config["HOST"], user=app.config["USER"], password=app.config["PASSWORD"],
-                               database=app.config["DATABASES"])
-    cursor = db_connection.cursor()
-    cursor.execute(
-        "INSERT INTO word_table(name,flag0,flag1,flag2,flag3,flag4,flag5,flag6,flag7,flag8,flag9) values({})".format(
-            data_format), tuple(values))
-    db_connection.commit()
     return jsonify("ok")
 
 
